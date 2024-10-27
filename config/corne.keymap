@@ -18,11 +18,6 @@
             layers = <2>;
         };
 
-        Adjust {
-            bindings = <&tog 3>;
-            key-positions = <38 39>;
-        };
-
         Escape {
             bindings = <&kp ESC>;
             key-positions = <19 20>;
@@ -106,6 +101,15 @@
 &kp CAPS  &trans  &trans           &trans  &trans           &trans             &trans  &trans  &trans  &trans  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD
                                    &trans  &trans           &trans             &trans  &trans  &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Adjust {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
