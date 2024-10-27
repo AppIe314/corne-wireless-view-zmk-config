@@ -7,19 +7,19 @@
         compatible = "zmk,combos";
 
         Lower {
-            bindings = <&mo 1>;
+            bindings = <&lt 1 TAB>;
             key-positions = <38>;
             layers = <1>;
         };
 
         Raise {
-            bindings = <&mo 2>;
+            bindings = <&lt 2 BACKSPACE>;
             key-positions = <39>;
             layers = <2>;
         };
 
         Adjust {
-            bindings = <&mo 3>;
+            bindings = <&tog 3>;
             key-positions = <38 39>;
         };
 
