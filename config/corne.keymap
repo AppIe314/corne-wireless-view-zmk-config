@@ -6,18 +6,6 @@
     combos {
         compatible = "zmk,combos";
 
-        Lower {
-            bindings = <&lt 1 TAB>;
-            key-positions = <38>;
-            layers = <1>;
-        };
-
-        Raise {
-            bindings = <&lt 2 BACKSPACE>;
-            key-positions = <39>;
-            layers = <2>;
-        };
-
         Escape {
             bindings = <&kp ESC>;
             key-positions = <19 20>;
@@ -61,6 +49,28 @@
         Forward_Slash {
             bindings = <&kp SLASH>;
             key-positions = <6 29>;
+        };
+    };
+
+    behaviors {
+        Lower: Lower {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LOWER";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <38>;
+        };
+
+        Raise: Raise {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RAISE";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <39>;
         };
     };
 
