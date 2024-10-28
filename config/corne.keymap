@@ -50,11 +50,6 @@
             bindings = <&kp SLASH>;
             key-positions = <6 29>;
         };
-
-        Adjust {
-            bindings = <&Adjust 3>;
-            key-positions = <38 39>;
-        };
     };
 
     behaviors {
@@ -76,15 +71,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             hold-trigger-key-positions = <39>;
-        };
-
-        Adjust: Adjust {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ADJUST";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            bindings = <&mo >;
-            hold-trigger-key-positions = <38 39>;
         };
     };
 
