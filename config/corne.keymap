@@ -89,19 +89,19 @@
 
         Base-Layer {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R    &kp T           &kp Y               &kp U      &kp I      &kp O    &kp P     &kp MINUS
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F    &kp G           &kp H               &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V    &kp B           &kp N               &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
-                         &kp LALT  &kp RET  &Lower 1 TAB    &Raise 2 BACKSPACE  &kp SPACE  &kp RSHFT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R                  &kp T           &kp Y               &kp U      &kp I      &kp O    &kp P     &kp MINUS
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F                  &kp G           &kp H               &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V                  &kp B           &kp N               &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
+                         &kp LALT  &Windows LEFT_GUI RET  &Lower 1 TAB    &Raise 2 BACKSPACE  &kp SPACE  &kp RSHFT
             >;
         };
 
         Number-Layer {
             bindings = <
-&kp TAB    &kp LS(EXCL)  &kp AT    &kp NON_US_HASH  &kp LS(DLLR)              &kp LS(PRCNT)         &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp PIPE2
-&kp LCTRL  &kp N1        &kp N2    &kp N3           &kp N4                    &kp N5                &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &kp LS(COLON)
-&kp LSHFT  &kp ESC       &kp PIPE  &kp GRAVE        &kp LBKT                  &kp LS(LEFT_BRACE)    &kp LS(RBRC)   &kp RBKT      &kp SQT       &kp DOT       &kp FSLH      &kp NON_US_BACKSLASH
-                                   &kp LALT         &Windows LEFT_GUI RETURN  &trans                &kp BSPC       &kp SPACE     &kp RSHFT
+&kp TAB    &kp LS(EXCL)  &kp AT    &kp NON_US_HASH  &kp LS(DLLR)  &kp LS(PRCNT)         &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp PIPE2
+&kp LCTRL  &kp N1        &kp N2    &kp N3           &kp N4        &kp N5                &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &kp LS(COLON)
+&kp LSHFT  &kp ESC       &kp PIPE  &kp GRAVE        &kp LBKT      &kp LS(LEFT_BRACE)    &kp LS(RBRC)   &kp RBKT      &kp SQT       &kp DOT       &kp FSLH      &kp NON_US_BACKSLASH
+                                   &kp LALT         &kp RETURN    &trans                &kp BSPC       &kp SPACE     &kp RSHFT
             >;
         };
 
